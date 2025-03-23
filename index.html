@@ -1,0 +1,362 @@
+<html>
+
+<head>
+    <title>Yemeni falafel </title>
+    <link rel="stylesheet" href="css1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+</head>
+
+<body>
+
+    <div class="navbar">
+        
+        <a href="https://www.facebook.com/falafelTemani/?locale=he_IL"  id='logo' class="fa fa-facebook"></a>
+        
+
+        <a id='logo' href="https://www.waze.com/en/live-map/directions/%D7%A7%D7%A8%D7%99%D7%99%D7%AA-%D7%9E%D7%95%D7%A6%D7%A7%D7%99%D7%9F?latlng=32.833749352972596%2C35.075418949127204pin=1">
+            <img  src="waze-icon.png" width="40" height="40">
+        </a>
+
+
+        <form id="loginform" name="loginform"  onsubmit="validatelogin()">
+        <input class="loginform" type="password" id="username" name="username" placeholder="User Name" required></input>
+        <input  class="loginform" type="password" id="pwd" name="password" placeholder="Password" required></input>
+        <button type="submit">Login</button>
+        </form>
+        <div id="loginmsg"></div>
+
+
+         <nav>
+             <ul>
+                 <li>
+                     <a class="navbar__link" href="#aboutus"> קצת עלינו</a>
+                     <span href=""  id='aboutlogo' class="fa fa-child"></span>
+                 </li>
+ 
+                 <li>
+                     <a class="navbar__link" href="#contact">יצירת קשר</a>
+                     <span href=""  id='phonelogo' class="fa fa-phone"></span>
+                 </li>
+ 
+                 <li>
+                     <a href="#main"><img class="homelogo" src="falafel.png" /></a>
+                 </li>
+ 
+                 
+             </ul>
+         </nav>
+ 
+     </div>
+     
+    <div id="main" class="container" >
+
+
+
+
+        
+        
+    <form id="form">
+        <div class="header"> 
+             
+                <h1 style="margin-bottom: 1;">פלאפל תימני</h1>
+            
+    </div>
+      
+        <table  border=0><tr> 
+            <td id="picturesbox">
+                <table  border=0 > 
+                    
+                    <tr>
+                        <td>
+                            
+                        <td> 
+                          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </td> 
+                        <td id="textOrder">
+                          <h2 id="ordersuccess"> </h2>
+                           <p id="totalpriceprint"></p>  
+                           <p id="totaltimeprint"></p>       
+                        </td>
+                    </tr> 
+                     <tr>
+                        <td > 
+                            <img style='box-shadow: rgb(177, 177, 220) 1px 1px 10px;' id="picmove" src="pic1.jpg" height="350px" width="400px"> </br> 
+                             <h3 id="picChange">picture1</h3>
+                             <button type="button" onclick="pictureChange()">החלף תמונה</button>
+                        </td>
+                     </tr>
+            </table>    
+        </td> 
+        <td>
+            <table  id="table" border=1>
+                <tr>
+                    <td style="background-color: brown;"> </td>
+                    <th style="background-color: brown;"id="headline">תוספות </th>
+                    <th style="background-color: brown;"id="headline">כמות </th>
+                    <th style="background-color: brown;"id="headline">מחיר </th>
+                    <th style="background-color: brown;"id="headline">שם מוצר </th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="falafel.jpg" width="180"> 
+                    </td>  
+                    <td id="extra">
+                        <input type="checkbox" id="saladmana" name="salad" value="salad">סלט</br>
+                        <input type="checkbox" id="spicymana" name="spicy" value="spicy">חריף</br>
+                        <input type="checkbox" id="eggplantmana" name="eggplant" value="eggplant">חציל</br>
+                        <input type="checkbox" id="tehinamana" name="tehina" value="tehina">טחינה</br>
+                    </td>                
+                    <td>
+                        <select id="countmana" name="count">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                    </td>
+                    <td>₪20 </td>
+                    <td>מנה פלאפל</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="halfFalafel.jpg" width="180">
+                    </td>
+                    <td id="extra">
+                        <input type="checkbox" id="saladhalfmana" name="salad" value="salad">סלט</br>
+                        <input type="checkbox" id="spicyhalfmana" name="spicy" value="spicy">חריף</br>
+                        <input type="checkbox" id="tehinahalfmana" name="eggplant" value="eggplant">חציל</br>
+                        <input type="checkbox" id="tehinahalfmana" name="tehina" value="tehina">טחינה</br>
+                    </td>                
+                    <td><select id="counthalfmana" name="count">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                    </td>
+                    <td>₪15</td>
+                    <td>חצי מנה</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="fries.jpg" width="180"> 
+                    </td>
+                    <td> 
+                    </td>
+                    <td>
+                        <select id="countfries" name="count">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </td> 
+                    <td>
+                        ₪15
+                    </td>
+                    <td>   
+                        ציפס
+                    </td>
+        </td>           
+                </tr>
+                <tr>
+                    <td>
+                        <img src="drink.jpg" width="180"> 
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <table id="table" border=0>
+                            <tr>
+                                <td>
+                                    <select id="countcola" name="count">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </td>
+                            <td>קולה</br> </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select id="countzero" name="count">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </td>
+                                <td>זירו</br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select id="countwater" name="count">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </td>
+                                <td>מים</br></td>
+                            </tr>   
+                            <tr>
+                                <td>
+                                    <select id="countsoda" name="count">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                </td>
+                                <td>סודה</br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select id="countgrapes" name="count">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                </td>
+                                <td>ענבים</br></td>
+                            </tr>                           
+                        </table>
+                    <td>₪10 </td>
+                    <td>שתיה</td>
+
+                    <table border="0"> 
+                        <tr>
+                             <h2>  ...עוד שניה וההזמנה אצלכם, נשארו רק הפרטים</h2>
+                        </tr> 
+                    </table>
+                
+                    <table id="table" border=0>
+                        <tr>
+                            <th>
+                                <input type="text" id="Lname" name="Lname">-שם משפחה
+                            </th>
+                            <th>
+                                <input type="text" id="fname" name="fname">-שם פרטי
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="text" id="street" name="street">-רחוב
+                            </th>
+                            <th>
+                                <input type="text" id="city" name="city">-עיר
+                            </th>
+                        </tr>
+                        <tr>
+                            <th> 
+                                <input type="text" id="apartment" name="apartment">-דירה
+                            </th>
+                            <th> 
+                                <input type="text" id="floor" name="floor">-קומה
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="text" id="phone" name="phone">-פלאפון
+                            </th>
+                        </tr>
+                    </table><br>
+                    <button  id="button" type="button" value="בצע הזמנה" onclick="verifyInput()">בצע הזמנה</button>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        </table>
+         <p id="res"></p>
+    </form>
+    </div>
+
+    
+
+        <div id="contact" class="container ">
+
+
+            <div id="contact">
+                <div >
+                    <h1>יצירת קשר</h1>
+                     <p>
+                          מיקום: קרית מוצקין ויצמן 11 
+                         <br /><br />
+                         טל':  04-8701867  | נייד: 052-5958564
+                         <br /><br />
+                         שעות פתיחה: א'-ה' 09:00 - 17:00
+                         <br /><br />
+                     </p>
+                 </div>
+                <div class="col" style="padding: 100;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.433863866967!2d35.07766392487589!3d32.83376238108483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151db718ede3144f%3A0x697ec06974b57f6e!2z16TXnNeQ16TXnCDXqteZ157XoNeZ!5e0!3m2!1siw!2sil!4v1707324940596!5m2!1siw!2sil" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </td>
+                </div>
+                
+    
+            </div>
+
+    </div>
+
+    
+    
+        <div id="aboutus" class="container">
+            <table>
+                <tr>
+                    <td>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FfalafelTemani%2Fposts%2Fpfbid02SmC9chgvK86jPEDuS3mnkD5AEckZMUsiZUmaSyVS3Aiu8jSn8FFBDGzrVMSTJKvql&show_text=true&width=500" width="500" height="717" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+                    </td>
+                    <td>
+                        <h1 id="abouttext">קצת עלינו</h1>
+                        <h3 id="abouttext">
+                            ,מאיר בן עזרא התחיל לעבוד בגיל 7 בפלאפל שכונתי קטן<br>.מגיל צעיר החלום שלו היה לפתוח עסק משלו<br>
+                            ,בשנת 1998 התגשם החלום ופתח את ״הפלאפל התימני״ שחימם ואיחד לבבות עד ימנו <br>
+                            ,את אדותיו והסיפורים על מאיר אף פעם לא נגמרים ותמיד נוכל לשמוע עוד  סיפורים שמחממים את הלב<br>
+                             .וכמובן ממלאים את הקיבה<br>
+                            (: מחכים לכם אצלנו
+                        </h3>
+                    </td>
+                    
+                </tr>
+            </table>
+                   
+
+                
+        </div>
+    
+
+
+
+        
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+    <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/track/0L03BHlxJ1EcwLUUKvcMiP?utm_source=generator&theme=0" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</div>
+
+
+<script src="script.js"></script>
+<script src="datascript.js"></script>
+<script src="singltone.js"></script>
+</body>
+</html>

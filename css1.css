@@ -1,0 +1,221 @@
+html {
+   scroll-behavior: smooth;
+}
+
+body{
+   background-repeat:no-repeat;
+   background-size: cover;
+   font-family: 'Heebo', sans-serif;
+   text-align: center;
+   color: white;
+}
+
+#picturesbox{
+   display: block;
+}
+
+.header{
+   padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    flex-direction: column;
+    
+}
+#contact{
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+   font-size: 22px;
+   
+}
+
+#aboutus{
+   display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#abouttext{
+   text-align: end;
+   
+}
+
+h1{
+   font-size: 50px;
+}
+
+h4{
+   font-size: 30px;
+}
+
+th {
+   text-align: start;
+   
+}
+
+#picChange{
+   display: none;
+}
+
+#table{
+   border-collapse: collapse;
+   border: 1px black;
+   text-align: end;
+   
+
+}
+
+#form{
+   display:grid;
+   justify-content: end;
+}
+
+
+
+
+#headline{
+   text-align: end;
+}
+
+#extra{
+   text-align: center;
+}
+
+
+#place{
+   text-align: center;
+}
+
+button {
+   background-color: #252525; /* Green */
+   border-radius: 10px;
+   color: white;
+   padding:5px 30px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 12px;
+   cursor: pointer;
+   
+ }
+ 
+
+ul{
+   display: flex;
+    justify-content: flex-end;
+}
+ 
+.navbar {
+   top: 0%;
+   position: fixed;
+   width: 100%;
+   background: #333;
+   display: flex;
+   align-items: center;
+   z-index: 10000;
+}
+
+nav {
+   flex: 1;
+   text-align: right;
+}
+
+   nav ul {
+       list-style: none;
+   }
+
+       nav ul li {
+           display: inline-block;
+           margin: 0 30px;
+       }
+
+.navbar__link {
+   color: #fff;
+   text-decoration: none;
+   font-size: 22px;
+   transition: box-shadow .5s ease-in-out;
+}
+
+   .navbar__link:hover {
+       box-shadow: inset 200px 0 0 0 #757a80;
+   }
+
+
+   .homelogo {
+      height: 45px;
+      
+      
+  }
+
+
+
+  /* Style all font awesome icons */
+.fa {
+   padding: 10px;
+   width: 10px;
+   text-align: center;
+   text-decoration: none;
+ }
+ 
+ /* Add a hover effect if you want */
+ .fa:hover {
+   opacity: 0.7;
+ }
+ 
+ 
+#loginmsg{
+   margin-left: 20px;
+}
+
+.loginform{
+   width: 150px;
+   margin-left: 15px;
+   height: 25px;
+   margin-top: 15px;
+}
+ #logo{
+   padding-left: 3%;
+   font-size: 40px;
+   color: white;
+   
+ }
+ #phonelogo{
+   font-size: 25px;
+   color: white;
+   
+ }
+ #aboutlogo{
+   font-size: 25px;
+   color: white;
+   
+ }
+
+
+
+
+
+
+
+ .container {
+   background-image:  linear-gradient(rgba(0, 0, 0, 0.1),rgba(0,0,0,0.7)),url(backimg.jpg);
+
+   width: 100%;
+   height: 120vh;
+   background-position: center;
+   background-size: cover;
+   padding-left: 4%;
+   padding-right: 4%;
+   box-sizing: border-box;
+}
+
+.footer{
+      bottom: 0%;
+      position: fixed;
+      width: 100%;
+      height: 80;
+}
